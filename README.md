@@ -4,6 +4,10 @@
 
 1. Copy `custom.css` to `~/.jupyter/custom/custom.css`
 
+## Demo
+
+A demo can be seen [here](demo.html).
+
 ## More that have in mind implementing
 
 * d3js
