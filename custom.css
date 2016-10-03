@@ -4,11 +4,14 @@
 *
 */
 /*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+@import 'https://fonts.googleapis.com/css?family=Inconsolata:400,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese';
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1076,7 +1079,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 13px;
   line-height: 1.42857143;
   color: #000;
@@ -1100,6 +1103,7 @@ a:focus {
   text-decoration: underline;
 }
 a:focus {
+  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -1581,17 +1585,20 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    //width: 768px;
+    width: auto;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 940px;
+    //width: 940px;
+    width: auto;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1140px;
+    //width: 1140px;
+    width: auto;
   }
 }
 .container-fluid {
@@ -2528,6 +2535,7 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
+  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3018,6 +3026,7 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
+  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -9490,7 +9499,7 @@ div.cell.selected {
   border-color: #ababab;
   border-left-width: 0px;
   padding-left: 6px;
-  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 5px, transparent 5px, transparent 100%);
+  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 7px, transparent 7px, transparent 100%);
 }
 @media print {
   div.cell.selected {
@@ -9506,7 +9515,7 @@ div.cell.selected.jupyter-soft-selected {
   border-color: #66BB6A;
   border-left-width: 0px;
   padding-left: 6px;
-  background: linear-gradient(to right, #66BB6A -40px, #66BB6A 5px, transparent 5px, transparent 100%);
+  background: linear-gradient(to right, #66BB6A -40px, #66BB6A 7px, transparent 7px, transparent 100%);
 }
 @media print {
   .edit_mode div.cell.selected {
@@ -10401,11 +10410,11 @@ div#notebook {
 }
 @media not print {
   #notebook-container {
-    padding: 15px;
+    /*padding: 15px;*/
     background-color: #fff;
     min-height: 0;
-    -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
-    box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+    /*-webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+    box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);*/
   }
 }
 @media print {
@@ -10452,7 +10461,7 @@ p {
 }
 @media not print {
   .notebook_app {
-    background-color: #EEE;
+    background-color: #ffffff;
   }
 }
 kbd {
