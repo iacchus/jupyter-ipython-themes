@@ -111,8 +111,9 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: 'Inconsolata', monospace;
   font-size: 1em;
+  font-weight: bold !important;
 }
 button,
 input,
@@ -1531,7 +1532,8 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace;
+  font-family: 'Inconsolata',monospace;
+  font-weight: bold;
 }
 code {
   padding: 2px 4px;
@@ -9231,7 +9233,8 @@ ul#new-menu {
   content: "\f00c";
 }
 #tab_content {
-  padding-top: 20px;
+  padding-top: 17px;
+  font-size: 12px;
 }
 #running .panel-group .panel {
   margin-top: 3px;
@@ -10395,7 +10398,7 @@ h6:hover .anchor-link {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   height: 100%;
-  //padding: 5px;
+  padding: 3px;
 }
 div#notebook_panel {
   margin: 0px;
@@ -11591,3 +11594,81 @@ ul.typeahead-list > li > a {
   margin-top: 20px;
 }
 /*# sourceMappingURL=style.min.css.map */
+
+
+/*
+ * codemirror styles
+ */
+
+/* GLOBALS */
+body {background-color: #f8f8f8;}
+a {color: #7cafc2;}
+
+/* INTRO PAGE */
+.toolbar_info, .list-container {color: #282828;}
+
+/* NOTEBOOK */
+
+/* comment out this line to bring the toolbar back */
+//div#maintoolbar, div#header {display: none !important;}
+
+div#notebook {border-top: none;}
+
+div.input_prompt {color: #ba8baf;}
+div.output_prompt {color: #a16946;}
+div.input_area {
+  border-radius: 0px;
+  border: 1px solid #d8d8d8;
+}
+div.output_area pre {font-weight: bold; color: #383838; font-size: 12px;}
+//div.output_area pre {font-weight: normal; color: #383838;}
+div.output_subarea {font-weight: normal; color: #383838;}
+
+.rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
+  border: 1px  #585858 solid;
+  color: #585858;
+}
+div.output_html { font-family: sans-serif; }
+table.dataframe tr {border: 1px #383838;}
+
+div.cell.selected {border-radius: 0px;}
+div.cell.edit_mode {border-radius: 0px; border: thin solid #a16946;}
+div.text_cell_render, div.output_html {color: #383838;}
+
+span.ansiblack {color: #282828;}
+span.ansiblue {color: #86c1b9;}
+span.ansigray {color: #b8b8b8;}
+span.ansigreen {color: #a1b56c;}
+span.ansipurple {color: #ba8baf;}
+span.ansired {color: #ab4642;}
+span.ansiyellow {color: #f7ca88;}
+
+div.output_stderr {background-color: #ab4642; border: none;}
+div.output_stderr pre {color: #e8e8e8;}
+
+.cm-s-ipython.CodeMirror {background: #f8f8f8; color: #282828;}
+.cm-s-ipython div.CodeMirror-selected {background: #e8e8e8 !important;}
+.cm-s-ipython .CodeMirror-gutters {background: #f8f8f8; border-right: 0px;}
+.cm-s-ipython .CodeMirror-linenumber {color: #b8b8b8;}
+.cm-s-ipython .CodeMirror-cursor {border-left: 1px solid #585858 !important;}
+
+.cm-s-ipython span.cm-comment {color: #a16946;}
+.cm-s-ipython span.cm-atom {color: #ba8baf;}
+.cm-s-ipython span.cm-number {color: #ba8baf;}
+
+.cm-s-ipython span.cm-property, .cm-s-ipython span.cm-attribute {color: #a1b56c;}
+.cm-s-ipython span.cm-keyword {color: #ab4642;}
+.cm-s-ipython span.cm-string {color: #f7ca88;}
+.cm-s-ipython span.cm-operator {color: #a16946;}
+.cm-s-ipython span.cm-builtin {color: #ba8baf;}
+
+.cm-s-ipython span.cm-variable {color: #a1b56c;}
+.cm-s-ipython span.cm-variable-2 {color: #7cafc2;}
+.cm-s-ipython span.cm-def {color: #dc9656;}
+.cm-s-ipython span.cm-error {background: #ab4642; color: #585858;}
+.cm-s-ipython span.cm-bracket {color: #383838;}
+.cm-s-ipython span.cm-tag {color: #ab4642;}
+.cm-s-ipython span.cm-link {color: #ba8baf;}
+
+.cm-s-ipython .CodeMirror-matchingbracket { text-decoration: underline; color: #282828 !important;}
+
