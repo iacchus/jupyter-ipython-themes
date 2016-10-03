@@ -11,7 +11,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 @import 'https://fonts.googleapis.com/css?family=Inconsolata:400,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese';
-
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese';
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1182,7 +1182,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
+  //font-family: inherit;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -3058,7 +3059,7 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn-default {
-  color: #333;
+  color: #777;
   background-color: #fff;
   border-color: #ccc;
 }
@@ -10394,7 +10395,7 @@ h6:hover .anchor-link {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   height: 100%;
-  padding: 5px;
+  //padding: 5px;
 }
 div#notebook_panel {
   margin: 0px;
@@ -10411,7 +10412,7 @@ div#notebook {
   overflow-x: auto;
   width: 100%;
   /* This spaces the page away from the edge of the notebook area */
-  padding-top: 20px;
+  //padding-top: 20px;
   margin: 0px;
   outline: none;
   box-sizing: border-box;
