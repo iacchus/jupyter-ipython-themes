@@ -1103,6 +1103,7 @@ a:hover,
 a:focus {
   color: #669;
   text-decoration: underline;
+  transition: padding 0.2s ease;
 }
 a:focus {
   outline: thin dotted;
@@ -9030,6 +9031,7 @@ ul.breadcrumb span {
 }
 .list_item a {
   text-decoration: none;
+  transition: padding 0.2s ease;
 }
 .list_item:hover {
   background-color: #fafafa;
