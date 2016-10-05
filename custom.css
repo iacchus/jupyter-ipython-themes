@@ -11643,7 +11643,7 @@ div.input_area {
   border-radius: 0px;
   border: 1px solid #c5c8c6;
 }
-div.output_area pre {font-size: 12px; font-weight: normal; color: #373b41;}
+div.output_area pre {font-size: 13.6px; font-weight: normal; color: #373b41;}
 div.output_subarea {font-weight: normal; color: #373b41;}
 
 .rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
