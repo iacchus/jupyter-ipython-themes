@@ -9094,9 +9094,11 @@ ul.breadcrumb span {
   font-size: 12px;
   //padding-top: 4px;
   background-color: #77aa77;
-  color: rgba(255, 255, 255, 0.8);
-  padding: 1px 4px;
+  //color: rgba(255, 255, 255, 0.8);
+  color: #fff;
+  padding: 3px 4px;
   border-radius: 2px;
+  font-weight: bold;
 }
 .item_buttons .kernel-name {
   padding-top: 4px;
@@ -11619,7 +11621,7 @@ div#notebook, div.CodeMirror, div.output_area pre, div.output_wrapper, div.promp
 
 /* GLOBALS */
 body {background-color: #ffffff;}
-a {color: #3971ED;}
+a {color: #333;}
 
 /* INTRO PAGE */
 .toolbar_info, .list-container {color: #282a2e;}
@@ -11663,7 +11665,7 @@ span.ansiyellow {color: #FBA922;}
 div.output_stderr {background-color: #CC342B;}
 div.output_stderr pre {color: #e0e0e0;}
 
-.cm-s-ipython.CodeMirror {font-size: 12px; background: #ffffff; color: #282a2e;}
+.cm-s-ipython.CodeMirror {font-size: 13px; background: #ffffff; color: #282a2e;}
 .cm-s-ipython div.CodeMirror-selected {background: #e0e0e0 !important;}
 .cm-s-ipython .CodeMirror-gutters {background: #ffffff; border-right: 0px;}
 .cm-s-ipython .CodeMirror-linenumber {color: #b4b7b4;}
