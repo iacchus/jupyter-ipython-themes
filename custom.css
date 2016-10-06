@@ -113,7 +113,8 @@ pre,
 samp {
   font-family: 'Inconsolata', monospace;
   font-size: 1em;
-  font-weight: bold !important;
+  //font-weight: bold !important;
+  font-weight: normal !important;
 }
 button,
 input,
@@ -9713,13 +9714,15 @@ div.input_area > div.highlight > pre {
  * }
  */
 .CodeMirror {
-  line-height: 1.21429em;
+  //line-height: 1.21429em;
+  line-height: normal;
   /* Changed from 1em to our global default */
-  font-size: 14px;
+  font-size: 13.6px;
   height: auto;
   /* Changed to auto to autogrow */
   background: none;
   /* Changed from white to allow our bg to show through */
+  text-shadow: 0 0 0px rgba(0, 0, 0, 0.85);
 }
 .CodeMirror-scroll {
   /*  The CodeMirror docs are a bit fuzzy on if overflow-y should be hidden or visible.*/
