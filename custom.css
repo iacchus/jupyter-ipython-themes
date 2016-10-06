@@ -9722,7 +9722,7 @@ div.input_area > div.highlight > pre {
   /* Changed to auto to autogrow */
   background: none;
   /* Changed from white to allow our bg to show through */
-  text-shadow: 0 0 0px rgba(0, 0, 0, 0.85);
+  text-shadow: 0 0 0px rgba(0, 0, 0, 0.4);
 }
 .CodeMirror-scroll {
   /*  The CodeMirror docs are a bit fuzzy on if overflow-y should be hidden or visible.*/
