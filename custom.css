@@ -4363,8 +4363,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 .navbar-form {
@@ -11352,7 +11352,7 @@ span.autosave_status {
   border: 0px;
   min-height: 27px;
   margin-left: 0px;
-  padding-top: 11px;
+  padding-top: 0px;
   padding-bottom: 3px;
 }
 #maintoolbar .navbar-text {
