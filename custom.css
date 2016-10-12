@@ -11650,8 +11650,9 @@ div.output_area pre {font-size: 13.6px; font-weight: normal; color: #373b41;}
 div.output_subarea {font-weight: normal; color: #373b41;}
 
 .rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
-  border: 1px  #969896 solid;
-  color: #969896;
+  border: 1px  #999 solid;
+  color: #333;
+  font-family: 'Inconsolata', monospace;
 }
 div.output_html { font-family: sans-serif; }
 table.dataframe tr {border: 1px #373b41;}
