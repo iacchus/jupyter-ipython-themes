@@ -8782,6 +8782,7 @@ body > #header .header-bar {
 }
 #site {
   width: 100%;
+  height: auto !important;
   display: none;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
