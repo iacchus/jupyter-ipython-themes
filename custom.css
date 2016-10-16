@@ -9995,7 +9995,8 @@ div.output_area .rendered_html img {
 }
 div.output_area img,
 div.output_area svg {
-  max-width: 100%;
+  //max-width: 100%;
+  max-width: none !important;
   height: auto;
 }
 div.output_area img.unconfined,
@@ -10266,19 +10267,25 @@ div.output_unrecognized a:hover {
 }
 .rendered_html tr,
 .rendered_html th,
-.rendered_html td {
+.rendered_html td,
+.rendered_html caption {
   border: 1px solid black;
   border-collapse: collapse;
-  margin: 1em 2em;
+  //margin: 1em 2em;
+  margin: 0;
 }
 .rendered_html td,
-.rendered_html th {
+.rendered_html th,
+.rendered_html caption {
   text-align: left;
   vertical-align: middle;
   padding: 4px;
 }
-.rendered_html th {
+.rendered_html th, .rendered_html caption {
   font-weight: bold;
+}
+.rendered_html caption {
+  border-bottom: 0 !important;
 }
 .rendered_html * + table {
   margin-top: 1em;
@@ -10299,7 +10306,8 @@ div.output_unrecognized a:hover {
 }
 .rendered_html img,
 .rendered_html svg {
-  max-width: 100%;
+  //max-width: 100%;
+  max-width: auto;
   height: auto;
 }
 .rendered_html img.unconfined,
@@ -11650,7 +11658,7 @@ div.input_area {
 div.output_area pre {font-size: 13.6px; font-weight: normal; color: #373b41;}
 div.output_subarea {font-weight: normal; color: #373b41;}
 
-.rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
+.rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td, .rendered_html caption {
   border: 1px  #999 solid;
   color: #333;
   font-family: 'Inconsolata', monospace;
