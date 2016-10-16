@@ -9920,13 +9920,16 @@ div.output_wrapper {
 /* class for the output area when it should be height-limited */
 div.output_scroll {
   /* ideally, this would be max-height, but FF barfs all over that */
-  height: 24em;
+  //height: 24em;
+  height: auto;
   /* FF needs this *and the wrapper* to specify full width, or it will shrinkwrap */
   width: 100%;
   overflow: auto;
   border-radius: 2px;
-  -webkit-box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
-  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  //-webkit-box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  //box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: none;
+  box-shadow: none;
   display: block;
 }
 /* output div while it is collapsed */
